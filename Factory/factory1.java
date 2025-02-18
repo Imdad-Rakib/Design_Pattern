@@ -27,7 +27,7 @@ class Truck implements Car {
 
 // Factory (Creator) Interface
 interface CarFactory {
-    public abstract Car createCar();
+    Car createCar();
 }
 
 // Concrete Factories
@@ -53,7 +53,7 @@ class TruckFactory implements CarFactory {
 }
 
 // Client Code
-public class factory {
+public class factory1 {
     public static void main(String[] args) {
         CarFactory factory;
 
@@ -64,12 +64,12 @@ public class factory {
 
         // Create an SUV
         factory = new SUVFactory();
-        Car car2 = factory.createCar();
-        car2.drive();
+        car1 = factory.createCar();
+        car1.drive();
 
         // Create a Truck
         factory = new TruckFactory();
-        Car car3 = factory.createCar();
-        car3.drive();
+        car1 = factory.createCar();
+        car1.drive();
     }
 }
