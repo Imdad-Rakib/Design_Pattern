@@ -1,4 +1,4 @@
-// Product Interface
+// Abstract Product 
 interface Car {
     void drive();
 }
@@ -25,7 +25,7 @@ class Truck implements Car {
     }
 }
 
-// Factory (Creator) Interface
+// Abstract Factory
 interface CarFactory {
     Car createCar();
 }
